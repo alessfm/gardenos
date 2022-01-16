@@ -41,6 +41,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:7.16.7"],
             ["babel-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:8.2.3"],
             ["css-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.5.1"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2"],
             ["style-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:3.3.1"],
             ["webpack", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:5.66.0"],
             ["webpack-cli", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:4.9.1"],
@@ -4431,6 +4433,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:7.16.7"],
             ["babel-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:8.2.3"],
             ["css-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.5.1"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2"],
             ["style-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:3.3.1"],
             ["webpack", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:5.66.0"],
             ["webpack-cli", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:4.9.1"],
@@ -5235,6 +5239,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["loose-envify", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/loose-envify-npm-1.4.0-6307b72ccf-6517e24e0c.zip/node_modules/loose-envify/",
+          "packageDependencies": [
+            ["loose-envify", "npm:1.4.0"],
+            ["js-tokens", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lru-cache", [
         ["npm:6.0.0", {
           "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",
@@ -5656,6 +5670,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["console-control-strings", "npm:1.1.0"],
             ["gauge", "npm:4.0.0"],
             ["set-blocking", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["object-assign", [
+        ["npm:4.1.1", {
+          "packageLocation": "./.yarn/cache/object-assign-npm-4.1.1-1004ad6dec-fcc6e4ea8c.zip/node_modules/object-assign/",
+          "packageDependencies": [
+            ["object-assign", "npm:4.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -6152,6 +6175,42 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["react", [
+        ["npm:17.0.2", {
+          "packageLocation": "./.yarn/cache/react-npm-17.0.2-99ba37d931-b254cc17ce.zip/node_modules/react/",
+          "packageDependencies": [
+            ["react", "npm:17.0.2"],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-dom", [
+        ["npm:17.0.2", {
+          "packageLocation": "./.yarn/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
+          "packageDependencies": [
+            ["react-dom", "npm:17.0.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2", {
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-0c38e8cdc6/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
+          "packageDependencies": [
+            ["react-dom", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2"],
+            ["@types/react", null],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"],
+            ["react", "npm:17.0.2"],
+            ["scheduler", "npm:0.20.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["readable-stream", [
         ["npm:2.3.7", {
           "packageLocation": "./.yarn/cache/readable-stream-npm-2.3.7-77b22a9818-e4920cf754.zip/node_modules/readable-stream/",
@@ -6396,6 +6455,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-cab8f25ae6.zip/node_modules/safer-buffer/",
           "packageDependencies": [
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["scheduler", [
+        ["npm:0.20.2", {
+          "packageLocation": "./.yarn/cache/scheduler-npm-0.20.2-90beaecfba-c4b35cf967.zip/node_modules/scheduler/",
+          "packageDependencies": [
+            ["scheduler", "npm:0.20.2"],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"]
           ],
           "linkType": "HARD",
         }]
