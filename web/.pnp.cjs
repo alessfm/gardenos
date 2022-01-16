@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:7.16.7"],
             ["babel-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:8.2.3"],
             ["css-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.5.1"],
+            ["file-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:5.5.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2"],
@@ -4420,6 +4421,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["file-loader", [
+        ["npm:6.2.0", {
+          "packageLocation": "./.yarn/cache/file-loader-npm-6.2.0-4b02fd87d5-faf43eecf2.zip/node_modules/file-loader/",
+          "packageDependencies": [
+            ["file-loader", "npm:6.2.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.2.0", {
+          "packageLocation": "./.yarn/__virtual__/file-loader-virtual-fba937ce3b/0/cache/file-loader-npm-6.2.0-4b02fd87d5-faf43eecf2.zip/node_modules/file-loader/",
+          "packageDependencies": [
+            ["file-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.2.0"],
+            ["@types/webpack", null],
+            ["loader-utils", "npm:2.0.2"],
+            ["schema-utils", "npm:3.1.1"],
+            ["webpack", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:5.66.0"]
+          ],
+          "packagePeers": [
+            "@types/webpack",
+            "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["fill-range", [
         ["npm:7.0.1", {
           "packageLocation": "./.yarn/cache/fill-range-npm-7.0.1-b8b1817caa-cc283f4e65.zip/node_modules/fill-range/",
@@ -4576,6 +4601,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:7.16.7"],
             ["babel-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:8.2.3"],
             ["css-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.5.1"],
+            ["file-loader", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:5.5.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:0ede024e7500c2df9b12c0d47a217d9abc4c1b44fd1f634d177702b6eb9494e696e413e7752170ae77e5e4ecf57816578f21646a99ac62d13879ffea34e6bd21#npm:17.0.2"],
@@ -5416,6 +5442,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:3.0.0"],
             ["json5", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.2", {
+          "packageLocation": "./.yarn/cache/loader-utils-npm-2.0.2-c693411911-9078d1ed47.zip/node_modules/loader-utils/",
+          "packageDependencies": [
+            ["loader-utils", "npm:2.0.2"],
+            ["big.js", "npm:5.2.2"],
+            ["emojis-list", "npm:3.0.0"],
+            ["json5", "npm:2.2.0"]
           ],
           "linkType": "HARD",
         }]
