@@ -9,7 +9,6 @@ body{
 }
 
 .App {
-  margin: 1rem;
-  color: blue;
+  margin: auto;
   font-family: var(--test);
 }
