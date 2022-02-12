@@ -1,0 +1,39 @@
+site_name: Gardeno's - Manual do Dev
+repo_url: https://github.com/alessfm/gardenos
+repo_name: alessfm/gardenos
+copyright: Copyright &copy; 2022 Alessandro F.
+theme:
+  language: pt-BR
+  favicon: assets/Vector.svg
+  logo: assets/Vector1.svg
+  icon:
+    repo: fontawesome/brands/github-alt
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Trocar para modo noturno
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Trocar para modo diurno
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alessfm/gardenos
+      name: Repositório Oficial
+extra_css:
+  - stylesheets/extra.css
