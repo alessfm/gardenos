@@ -9,12 +9,13 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  resolve: { 
-    extensions: ['*', '.js', '.jsx'] 
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './app/src/public/index.html'
+      template: './app/src/public/index.html',
+      favicon: './app/src/public/favicon.ico'
     })
   ],
   module: {
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: require.resolve('babel-loader'),
-        options: { presets: ['@babel/preset-env','@babel/preset-react'] }
+        options: { presets: ['@babel/preset-env', '@babel/preset-react'] }
       },
       {
         test: /\.css$/,
