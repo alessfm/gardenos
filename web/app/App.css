@@ -8,8 +8,3 @@ body {
   font-family: var(--roboto);
   background-color: #33bc84;
 }
-
-.logo {
-  width: 62px;
-  height: 56px;
-}

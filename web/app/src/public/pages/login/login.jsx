@@ -11,22 +11,16 @@ import Box from '@mui/material/Box';
 import SideImage from '../../../assets/img/login.jpg';
 import Logo from '../../../assets/img/logos/Vector.png';
 
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-function SwitchForm() {
+function Logotipo() {
   return (
-    <Grid container spacing={2} direction="row"
+    <Grid container direction="row"
       justifyContent="center"
       alignItems="center" sx={{ mt: 1 }}>
-      <img className='logo' src={Logo} alt="Logo" sx={{ m: 1 }} />
-      <ButtonGroup sx={{ m: 1 }}>
-        <Button variant="outlined">Entrar</Button>
-        <Button variant="contained">Cadastrar</Button>
-      </ButtonGroup>
+      <img className='logo' src={Logo} alt="Logo do Gardeno's" />
     </Grid>
   );
 }
@@ -89,14 +83,15 @@ export default function Login() {
       <Container
         component="main" maxWidth="md" sx={{ bgcolor: 'white', borderRadius: 2 }}>
         <Grid
+          className="grid-global"
           container
           spacing={2}
           sx={{ mt: 7 }}>
           <Grid item xs md>
-            <img className='Img' src={SideImage} alt="Arte de mulher segurando jarro de plantas" />
+            <img className='img-fundo' src={SideImage} alt="Arte de mulher segurando jarro de plantas" />
           </Grid>
-          <Grid className="form" item xs={12} md={4} sx={{ mr: 3 }}>
-            <SwitchForm sx={{ m: 1 }} />
+          <Grid className="form-cadastro" item xs={12} md={4} sx={{ mr: 3 }}>
+            <Logotipo sx={{ m: 1 }} />
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>

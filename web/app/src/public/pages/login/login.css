@@ -1,22 +1,31 @@
-.Img {
+.img-fundo {
   width: 500px;
   height: 500px;
 }
 
+.logo {
+  width: 62px;
+  height: 56px;
+}
+
 @media only screen and (max-width: 900px) {
-  .Img {
+  .img-fundo {
     display: none;
   }
 
-  .form {
+  .form-cadastro {
     margin-right: 0 !important;
   }
 }
 
 @media only screen and (max-width: 380px) {
-  .Img {
+  .img-fundo {
     display: initial;
     width: 320px;
     height: 320px;
+  }
+
+  .grid-global {
+    margin-top: 1rem !important;
   }
 }
