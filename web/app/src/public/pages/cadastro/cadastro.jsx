@@ -15,6 +15,8 @@ import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
 import LoadingButton from '@mui/lab/LoadingButton';
 
+import { createUser } from '../../services/UserService';
+
 export default function Cadastro() {
   return (
     <ThemeProvider theme={MainTheme}>
@@ -105,16 +107,13 @@ function FormCadastro() {
 
     const data = new FormData(event.currentTarget);
 
-    console.log({
-      userName: data.get('userName'),
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-
     timer.current = window.setTimeout(() => {
       setSuccess(true);
       setLoading(false);
-    }, 2000);
+    }, createUser(data).then(
+      response => console.log(response),
+      error => console.log(error)
+    ));
   };
 
   return (
