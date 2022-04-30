@@ -1,16 +1,3 @@
-# O Projeto
+# O Projeto em si
 
-## A ideia por trás
-Em andamento..
-
-## Estrutura básica
-Em andamento..
-
-### Web
-Em andamento..
-
-### API
-Em andamento..
-
-## Documentação
-Em andamento..
+...espere um pouco mais
