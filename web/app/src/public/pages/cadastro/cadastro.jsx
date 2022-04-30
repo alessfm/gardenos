@@ -107,13 +107,20 @@ function FormCadastro() {
 
     const data = new FormData(event.currentTarget);
 
+    const user = {
+      name: data.get('name'),
+      email: data.get('email'),
+      password: data.get('password'),
+    };
+
+    createUser(user).then(
+      response => console.log(response)
+    )
+
     timer.current = window.setTimeout(() => {
       setSuccess(true);
       setLoading(false);
-    }, createUser(data).then(
-      response => console.log(response),
-      error => console.log(error)
-    ));
+    }, 2000);
   };
 
   return (
@@ -121,7 +128,7 @@ function FormCadastro() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12}>
           <TextField
-            name="userName"
+            name="name"
             label="Nome de Usuário"
             required
             fullWidth
