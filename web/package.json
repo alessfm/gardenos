@@ -5,12 +5,13 @@
     "start": "webpack-dev-server --hot --open",
     "build": "webpack --config webpack.config.js --mode production"
   },
-  "proxy": "http://localhost:8000",
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.10",
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
+    "axios": "^0.27.2",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
@@ -21,6 +22,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/roboto": "^4.5.1",
