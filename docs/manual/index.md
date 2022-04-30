@@ -1,4 +1,0 @@
-# Funcionamento
-
-## Organização
-Em andamento..

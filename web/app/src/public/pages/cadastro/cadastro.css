@@ -1,0 +1,39 @@
+.img-fundo-quadrado {
+  width: 500px;
+  height: 500px;
+}
+
+.logo {
+  width: 62px;
+  height: 56px;
+}
+
+@media only screen and (max-width: 900px) {
+  .img-fundo-quadrado {
+    display: none;
+  }
+
+  .img-side {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .img-fundo-quadrado {
+    display: initial;
+    width: 320px;
+    height: 320px;
+  }
+
+  .form-cadastro {
+    margin-top: 0 !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .grid-global {
+    margin-top: 1rem !important;
+  }
+}

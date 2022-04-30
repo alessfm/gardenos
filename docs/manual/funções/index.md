@@ -1,4 +1,0 @@
-# Configurando
-
-## Yarn
-Em andamento..

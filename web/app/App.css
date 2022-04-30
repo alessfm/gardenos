@@ -1,9 +1,10 @@
 @import url('@fontsource/roboto/400.css');
 
-:root{
+:root {
   --roboto: 'Roboto'
 }
 
 body {
   font-family: var(--roboto);
+  background-color: #33bc84;
 }
