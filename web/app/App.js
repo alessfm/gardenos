@@ -1,8 +1,8 @@
-import Login from './src/public/pages/login/login';
+import Cadastro from './src/public/pages/cadastro/cadastro';
 import './App.css'
 
 export default function App() {
   return (
-    Login()
+    Cadastro()
   );
 }

@@ -1,4 +1,4 @@
-.img-fundo {
+.img-fundo-quadrado {
   width: 500px;
   height: 500px;
 }
@@ -9,20 +9,28 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .img-fundo {
+  .img-fundo-quadrado {
     display: none;
   }
 
-  .form-cadastro {
+  .img-side {
     margin-right: 0 !important;
   }
 }
 
 @media only screen and (max-width: 380px) {
-  .img-fundo {
+  .img-fundo-quadrado {
     display: initial;
     width: 320px;
     height: 320px;
+  }
+
+  .form-cadastro {
+    margin-top: 0 !important;
+  }
+
+  .logo {
+    display: none;
   }
 
   .grid-global {
