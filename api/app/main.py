@@ -1,13 +1,6 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from app.routers import userRoute
 from fastapi.middleware.cors import CORSMiddleware
-
-
-class User(BaseModel):
-    name: str
-    email: str
-    password: str
-
 
 app = FastAPI()
 
@@ -23,12 +16,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.post("/cadastro")
-async def cadastro(user: User):
-    return user
+app.include_router(userRoute)
