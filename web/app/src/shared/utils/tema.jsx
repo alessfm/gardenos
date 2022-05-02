@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-const MainTheme = createTheme({
+const TemaPrincipal = createTheme({
   black: {
     'background-color': '#000',
     'color': '#fff',
@@ -28,4 +28,4 @@ const MainTheme = createTheme({
   }
 });
 
-export { MainTheme };
+export { TemaPrincipal };

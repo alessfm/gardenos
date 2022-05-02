@@ -1,19 +1,19 @@
 from fastapi import FastAPI
-from app.routers import userRoute
+from routers.usuarioRouter import rotas
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
+origens = [
     "http://localhost:8080",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=origens,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(userRoute)
+app.include_router(rotas)

@@ -13,7 +13,7 @@ const API = 'http://localhost:8000'
 
 // }
 
-export async function createUser(user) {
-  const response = await axios.post(`${API}/cadastro`, user);
-  return response.user;
+export async function criarUsuario(usuario) {
+  const resposta = await axios.post(`${API}/cadastrar`, usuario);
+  return resposta.usuario;
 }
