@@ -1,4 +1,4 @@
-site_name: Gardeno's - Manual do Dev
+site_name: Gardeno's - Guia do Desenvolvedor
 repo_url: https://github.com/alessfm/gardenos
 repo_name: alessfm/gardenos
 copyright: Copyright &copy; 2022 Alessandro F.
@@ -14,13 +14,13 @@ theme:
       scheme: default
       accent: indigo
       toggle:
-        icon: material/weather-night
+        icon: material/eye-outline
         name: Trocar para modo noturno
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       accent: blue
       toggle:
-        icon: material/weather-sunny
+        icon: material/eye
         name: Trocar para modo diurno
   features:
     - navigation.instant
@@ -38,3 +38,11 @@ extra:
       name: Repositório Oficial
 extra_css:
   - stylesheets/extra.css
+markdown_extensions:
+  - footnotes
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

@@ -1,16 +1,5 @@
-# O Projeto
+# O Projeto em si
 
-## A ideia por trás
-Em andamento..
+Documentação de instalação está feita na aba [Instalar][instalar]! A descrição do projeto vai demorar um pouco mais...
 
-## Estrutura básica
-Em andamento..
-
-### Web
-Em andamento..
-
-### API
-Em andamento..
-
-## Documentação
-Em andamento..
+  [instalar]: https://alessfm.github.io/gardenos/instalar
