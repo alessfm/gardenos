@@ -2,7 +2,7 @@
 
 **Frontend**
 
-| Nome                 | Versão |  
+| Nome                 | Versão |
 | :----------          | :----- |
 | `@babel/cli`         | 7.16.8 |
 | `@babel/core`        | 7.16.7 |
@@ -24,3 +24,28 @@
 | `@mui/material`      | 5.2.8  |
 | `react`              | 17.0.2 |
 | `react-dom`          | 17.0.2 |
+
+**Backend**
+
+| Nome               | Versão |
+| :----------        | :----- |
+| `anyio`            | 3.5.0  |
+| `asgiref`          | 3.5.0  |
+| `autopep8`         | 1.6.8  |
+| `click`            | 8.1.2  |
+| `colorama`         | 0.4.4  |
+| `fastapi`          | 0.75.2 |
+| `h11`              | 0.13.0 |
+| `httptools`        | 0.4.0  |
+| `idna`             | 3.3    |
+| `pycodestyle`      | 2.8.0  |
+| `pydantic`         | 1.9.0  |
+| `python-dotenv`    | 0.20.0 |
+| `PyYAML`           | 6.0    |
+| `sniffio`          | 1.2.0  |
+| `starlette`        | 0.17.1 |
+| `toml`             | 0.10.2 |
+| `typing_extensions`| 4.2.0  |
+| `uvicorn`          | 0.17.6 |
+| `watchgod`         | 0.8.2  |
+| `websockets`       | 0.10.3 |
