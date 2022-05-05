@@ -22,4 +22,4 @@
 
 ## Como instalar?
 
-Para essa e outras perguntas, olhe o [Guia do Desenvolvedor](https://alessfm.github.io/gardenos/).
+Para essa e outras perguntas, por enquanto, olhe o [Guia do Desenvolvedor](https://alessfm.github.io/gardenos/).

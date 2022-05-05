@@ -1,25 +1,25 @@
 import * as React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import { MainTheme } from '../../../shared/utils/theme';
+import { TemaPrincipal } from '../../../shared/utils/tema';
 import './cadastro.css'
 
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-
-import SideImage from '../../../assets/img/login.jpg';
-import Logo from '../../../assets/img/logos/Vector.png';
-
-import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment'
 import LoadingButton from '@mui/lab/LoadingButton';
 
-import { createUser } from '../../services/UserService';
+import FundoLogin from '../../../assets/img/login-fundo.jpg';
+import Logo from '../../../assets/img/logos/vector-verde.png';
+
+import { criarUsuario } from '../../services/usuarioService';
 
 export default function Cadastro() {
   return (
-    <ThemeProvider theme={MainTheme}>
+    <ThemeProvider theme={TemaPrincipal}>
       <Container
         component="main" maxWidth="md" sx={{ bgcolor: 'white', borderRadius: 2 }}>
         <Grid
@@ -28,9 +28,9 @@ export default function Cadastro() {
           spacing={2}
           sx={{ mt: 7 }}>
           <Grid item xs md>
-            <img className='img-fundo-quadrado' src={SideImage} alt="Arte de mulher segurando jarro de plantas" />
+            <img className='img-fundo-quadrado' src={FundoLogin} alt="Arte de mulher segurando jarro de plantas" />
           </Grid>
-          <Grid className="img-side" item xs={12} md={4} sx={{ mr: 3 }}>
+          <Grid className="componentes" item xs={12} md={4} sx={{ mr: 3 }}>
             <Logotipo />
             <FormCadastro />
             <Copyright />
@@ -81,12 +81,12 @@ function Copyright() {
 }
 
 function FormCadastro() {
-  const [loading, setLoading] = React.useState(false);
-  const [success, setSuccess] = React.useState(false);
-  const timer = React.useRef();
+  const [carregar, setCarregar] = React.useState(false);
+  const [sucesso, setSucesso] = React.useState(false);
+  const duracao = React.useRef();
 
-  const buttonSx = {
-    ...(success && {
+  const btnCadastrarSX = {
+    ...(sucesso && {
       bgcolor: 'primary.dark',
       '&:hover': {
         bgcolor: 'primary.dark',
@@ -96,24 +96,31 @@ function FormCadastro() {
 
   React.useEffect(() => {
     return () => {
-      clearTimeout(timer.current);
+      clearTimeout(duracao.current);
     };
   }, []);
 
   const criarConta = (event) => {
-    setSuccess(false);
-    setLoading(true);
+    setSucesso(false);
+    setCarregar(true);
     event.preventDefault();
 
-    const data = new FormData(event.currentTarget);
+    const dadosUsuario = new FormData(event.currentTarget);
 
-    timer.current = window.setTimeout(() => {
-      setSuccess(true);
-      setLoading(false);
-    }, createUser(data).then(
-      response => console.log(response),
-      error => console.log(error)
-    ));
+    const usuario = {
+      nome: dadosUsuario.get('nome'),
+      email: dadosUsuario.get('email'),
+      senha: dadosUsuario.get('senha'),
+    };
+
+    criarUsuario(usuario).then(
+      response => console.log(response)
+    )
+
+    duracao.current = window.setTimeout(() => {
+      setSucesso(true);
+      setCarregar(false);
+    }, 2000);
   };
 
   return (
@@ -121,8 +128,12 @@ function FormCadastro() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12}>
           <TextField
-            name="userName"
-            label="Nome de Usuário"
+            name="nome"
+            label="Nome"
+            placeholder="alex11"
+            InputProps={{
+              startAdornment: <InputAdornment position="start">@</InputAdornment>,
+            }}
             required
             fullWidth
             autoFocus
@@ -132,6 +143,7 @@ function FormCadastro() {
           <TextField
             name="email"
             label="Email"
+            placeholder="alex11@mail.com"
             type="email"
             required
             fullWidth
@@ -139,7 +151,7 @@ function FormCadastro() {
         </Grid>
         <Grid item xs={12}>
           <TextField
-            name="password"
+            name="senha"
             label="Senha"
             type="password"
             required
@@ -151,11 +163,11 @@ function FormCadastro() {
             color="primary"
             type="submit"
             variant="contained"
-            loading={loading}
+            loading={carregar}
             loadingIndicator="Criando Conta..."
-            sx={buttonSx}
+            sx={btnCadastrarSX}
             fullWidth
-          >{success ? 'Conta Criada' : 'Criar Conta'}
+          >{sucesso ? 'Conta Criada' : 'Criar Conta'}
           </LoadingButton>
         </Grid>
         <IrParaLogin />

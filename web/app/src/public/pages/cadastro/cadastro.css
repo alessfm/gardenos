@@ -13,7 +13,7 @@
     display: none;
   }
 
-  .img-side {
+  .componentes {
     margin-right: 0 !important;
   }
 }
@@ -25,12 +25,12 @@
     height: 320px;
   }
 
-  .form-cadastro {
-    margin-top: 0 !important;
-  }
-
   .logo {
     display: none;
+  }
+
+  .form-cadastro {
+    margin-top: 0 !important;
   }
 
   .grid-global {
