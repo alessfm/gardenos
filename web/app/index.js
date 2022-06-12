@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App.js";
+import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import Rotas from "./routes.js";
+
+ReactDOM.render(
+  <HashRouter>
+    <Rotas />
+  </HashRouter>
+  , document.getElementById("root"));
